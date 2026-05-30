@@ -82,25 +82,26 @@ Backend: http://localhost:5000
 
 ## 📡 API Endpointlar
 
-| Method | Route | Auth | Tavsif |
-|--------|-------|------|--------|
-| POST | `/api/auth/register` | ❌ | Ro'yxatdan o'tish |
-| POST | `/api/auth/login` | ❌ | Kirish |
-| GET | `/api/auth/me` | ✅ | Joriy foydalanuvchi |
-| GET | `/api/tasks` | ✅ | Barcha vazifalar (pagination) |
-| GET | `/api/tasks/:id` | ✅ | Bitta vazifa |
-| POST | `/api/tasks` | ✅ | Yangi vazifa |
-| PUT | `/api/tasks/:id` | ✅ | Vazifani yangilash |
-| DELETE | `/api/tasks/:id` | ✅ | Vazifani o'chirish |
-| GET | `/api/categories` | ✅ | Barcha kategoriyalar |
-| GET | `/api/categories/:id` | ✅ | Bitta kategoriya |
-| POST | `/api/categories` | ✅ | Yangi kategoriya |
-| PUT | `/api/categories/:id` | ✅ | Kategoriyani yangilash |
-| DELETE | `/api/categories/:id` | ✅ | Kategoriyani o'chirish |
+| Method | Route                 | Auth | Tavsif                        |
+| ------ | --------------------- | ---- | ----------------------------- |
+| POST   | `/api/auth/register`  | ✅   | Ro'yxatdan o'tish             |
+| POST   | `/api/auth/login`     | ✅   | Kirish                        |
+| GET    | `/api/auth/me`        | ✅   | Joriy foydalanuvchi           |
+| GET    | `/api/tasks`          | ✅   | Barcha vazifalar (pagination) |
+| GET    | `/api/tasks/:id`      | ✅   | Bitta vazifa                  |
+| POST   | `/api/tasks`          | ✅   | Yangi vazifa                  |
+| PUT    | `/api/tasks/:id`      | ✅   | Vazifani yangilash            |
+| DELETE | `/api/tasks/:id`      | ✅   | Vazifani o'chirish            |
+| GET    | `/api/categories`     | ✅   | Barcha kategoriyalar          |
+| GET    | `/api/categories/:id` | ✅   | Bitta kategoriya              |
+| POST   | `/api/categories`     | ✅   | Yangi kategoriya              |
+| PUT    | `/api/categories/:id` | ✅   | Kategoriyani yangilash        |
+| DELETE | `/api/categories/:id` | ✅   | Kategoriyani o'chirish        |
 
 ## ✅ TZ Talablar Bajarilganmi?
 
 ### Backend
+
 - ✅ Express.js server (port, CORS, JSON parser)
 - ✅ MongoDB Mongoose orqali ulangan
 - ✅ 3 ta model: User, Task, Category
@@ -111,6 +112,7 @@ Backend: http://localhost:5000
 - ✅ Rate limiting + helmet.js (bonus)
 
 ### Frontend
+
 - ✅ Axios + interceptors
 - ✅ Token localStorage da saqlash + header
 - ✅ Protected routes
